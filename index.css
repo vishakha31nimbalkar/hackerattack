@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Sedan+SC&display=swap');
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  background: black;
+  color: #15d515;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+.middlepanel {
+  align-content: center;
+  font-size: 25px;
+}
+
+.column {
+  flex: 1;
+  height: 500px;
+  width: 500px;
+  margin: 50px;
+  overflow: hidden;
+}
+
+#warning {
+  display: none;
+  margin: 0px auto 0px auto;
+  width: 50%;
+}
+
+img {
+  height: 300px;
+  width: 500px;
+  margin: 50px 100px 10px 70px;
+  animation: animation 1.5s infinite;
+}
+
+h2 {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  color: red;
+  border: 2px solid red;
+  animation: animation 1.5s infinite;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  66.66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
